@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping(value = "/")
-    public String hello(){return "Hello Vistula, my first Spring controller!"; }
+    public String hello(){return "Hello Vistula, This is my first Spring controller!"; }
     //http://localhost:8080
 
     @GetMapping("/greeting")
@@ -20,4 +20,5 @@ public class HelloController {
         return  "greeting";
     }
     //http://localhost:8080/greeting?name=Vistula
+    //http://localhost:8080/greeting?name=Bhavika
 }
